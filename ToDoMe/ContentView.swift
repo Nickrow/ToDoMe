@@ -10,13 +10,23 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            VStack {
+                
+                Text("Список задач")
+                    .font(.title)
+                @State var task = ""
+                Text("Название задачи")
+                }
+            }
+            HStack {
+                Button("+ Добавить задачу") {
+                    print("Нажата кнопка добавления задачи")
+            }
+                .buttonStyle(.bordered)
         }
         .padding()
-    }
+        
+        }
 }
 
 #Preview {
